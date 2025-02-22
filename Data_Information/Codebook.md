@@ -41,45 +41,48 @@
 # NOAA Storm Events
 - BEGIN_YEARMONTH
 - BEGIN_DAY
-- BEGIN_TIME
+- begin_time: Time storm event began (24 hour time)
 - END_YEARMONTH
 - END_DAY
-- END_TIME
-- episode_id: ID assigned by NWS to denote the storm episode; links the event details file with the
-information within location file. The occurrence of storms and other significant weather phenomena having sufficient intensity to cause loss of life, injuries, significant property damage, and/or disruption to commerce. Rare, unusual, weather phenomena that generate media attention, such as snow flurries in South Florida or the San Diego coastal area; and Other significant meteorological events, such as record maximum or minimum temperatures or precipitation that occur in connection with another event.
+- end_time: Time that storm event ended (24 hour time)
+- episode_id: ID assigned by NWS to denote the storm episode; links the event details file with the information within location file. The occurrence of storms and other significant weather phenomena having sufficient intensity to cause loss of life, injuries, significant property damage, and/or disruption to commerce. Rare, unusual, weather phenomena that generate media attention, such as snow flurries in South Florida or the San Diego coastal area; and Other significant meteorological events, such as record maximum or minimum temperatures or precipitation that occur in connection with another event.
 - event_id: (Primary database key field) ID assigned by NWS to note a single, small part that goes into a specific storm episode; links the storm episode between the three files downloaded from SPC’s website
 - state: The state name where the event occurred (no State ID’s are included here; State Name is spelled out in ALL CAPS)
 - state_fips: A unique number (State Federal Information Processing Standard) is assigned to the county by the National Institute for Standards and Technology (NIST).
 - year: Four digit year for the event in this record
 - month_name: Name of the month for the event in this record (spelled out; not abbreviated)
-
-
-- EVENT_TYPE
-- CZ_TYPE
-- CZ_FIPS
-- CZ_NAME
-- WFO
-- BEGIN_DATE_TIME
-- CZ_TIMEZONE
-- END_DATE_TIME
-- INJURIES_DIRECT
-- INJURIES_INDIRECT
-- DEATHS_DIRECT
-- DEATHS_INDIRECT
-- DAMAGE_PROPERTY
-- DAMAGE_CROPS
-- SOURCE
-- MAGNITUDE
-- MAGNITUDE_TYPE
-- FLOOD_CAUSE
-- CATEGORY
-- TOR_F_SCALE
-- TOR_LENGTH
-- TOR_WIDTH
-- TOR_OTHER_WFO
-- TOR_OTHER_CZ_STATE
-- TOR_OTHER_CZ_FIPS
-- TOR_OTHER_CZ_NAME
+- EVENT_TYPE: The only events permitted in Storm Data are listed in Table 1 of Section 2.1.1 of NWS Directive 10-1605 at http://www.nws.noaa.gov/directives/sym/pd01016005curr.pdf. The chosen event name should be the one that most accurately describes the meteorological event leading to fatalities, injuries, damage, etc. However, significant events, such as tornadoes, having no impact or causing no damage, should also be included in Storm Data.
+- cz_type: Indicates whether the event happened in a (C) county/parish, (Z) zone or (M) marine
+- cz_fips: The county FIPS number is a unique number assigned to the county by the National Institute for Standards and Technology (NIST) or NWS Forecast Zone Number (See addendum)
+- cz_name: County/Parish, Zone or Marine Name assigned to the county FIPS number or NWS Forecast Zone
+- wfo: National Weather Service Forecast Office’s area of responsibility (County Warning Area) in which the event occurred)
+- begin_date_time: Date and time that storm event began (MM/DD/YYYY 24 hour time AM/PM)
+- cz_timezone: Time Zone for the County/Parish, Zone or Marine Name (Eastern Standard Time (EST), Central Standard Time (CST), Mountain Standard Time (MST), etc.
+- end_date_time: Date and time that storm event ended (MM/DD/YYYY 24 hour time AM/PM)
+- injuries_direct: The number of injuries directly related to the weather event
+- injuries_indirect: The number of injuries indirectly related to the weather event
+- deaths_direct: The number of deaths directly related to the weather event.
+- deaths_indirect: The number of deaths indirectly related to the weather event
+- damage_property: The estimated amount of damage to property incurred by the weather event. (e.g. 10.00K = $10,000; 10.00M = $10,000,000)
+- damage_crops: The estimated amount of damage to crops incurred by the weather event (e.g. 10.00K = $10,000; 10.00M = $10,000,000)
+- source: Source reporting the weather event
+- magnitude: measured extent of the magnitude type ~ only used for wind speeds and hail size (e.g. 0.75” of hail; 60 mph winds)
+- magnitude_type: EG = Wind Estimated Gust; ES = Estimated Sustained Wind; MS = Measured Sustained Wind; MG = Measured Wind Gust (no magnitude is included for instances of hail)
+- flood_cause: Reported or estimated cause of the flood
+- category: Unknown (During the time of downloading this particular file, NCDC has never seen anything provided within this field.)
+- tor_f_scale: Enhanced Fujita Scale describes the strength of the tornado based on the amount and type of damage caused by the tornado. The F-scale of damage will vary in the destruction area; therefore, the highest value of the F-scale is recorded for each event.
+  - EF0 – Light Damage (40 – 72 mph)
+  - EF1 – Moderate Damage (73 – 112 mph)
+  - EF2 – Significant damage (113 – 157 mph)
+  - EF3 – Severe Damage (158 – 206 mph)
+  - EF4 – Devastating Damage (207 – 260 mph)
+  - EF5 – Incredible Damage (261 – 318 mph)
+- tor_length: Length of the tornado or tornado segment while on the ground (minimal of tenths of miles)
+- tor_width: Width of the tornado or tornado segment while on the ground (in feet)
+- tor_other_wfo: Indicates the continuation of a tornado segment as it crossed from one National Weather Service Forecast Office to another. The subsequent WFO identifier is provided within this field.
+- tor_other_cz_state: The two character representation for the state name of the continuing tornado segment as it crossed from one county or zone to another. The subsequent 2-Letter State ID is provided within this field.
+- tor_other_cz_fips: The FIPS number of the county entered by the continuing tornado segment as it crossed from one county to another. The subsequent FIPS number is provided within this field.
+- tor_other_cz_name: The FIPS name of the county entered by the continuing tornado segment as it crossed from one county to another. The subsequent county or zone name is provided within this field in ALL CAPS.
 - BEGIN_RANGE
 - BEGIN_AZIMUTH
 - BEGIN_LOCATION
