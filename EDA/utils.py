@@ -14,7 +14,7 @@ warnings.filterwarnings('ignore', category=RuntimeWarning)
 
 def plot_outages_on_map_us(start_time,
                            end_time,
-                           data_directory = './data/eaglei_data'):
+                           data_directory = '../Data/eaglei_data'):
     """
     Plots the sum of customer outages on the map of the USA using Plotly.
 
@@ -123,7 +123,7 @@ def plot_outages_on_map_us(start_time,
 
 def plot_outages_on_map_state(start_time,
                               end_time,
-                              data_directory = './data/eaglei_data',
+                              data_directory = '../Data/eaglei_data',
                               state='Texas'):
     """
     Plots power outages on a map for a specified state and time range.
@@ -227,7 +227,7 @@ def plot_outages_on_map_state(start_time,
 def plot_outages_ts_states(start_time,
                            end_time,
                            states,
-                           data_directory = './data/eaglei_data'):
+                           data_directory = '../Data/eaglei_data'):
     """
     Plots the time series of total customers without power for multiple states within a specified time range.
 
@@ -289,7 +289,7 @@ def plot_outages_ts_states(start_time,
 
     return
 
-def plot_outages_ts_years(state, years, data_directory='./data/eaglei_data'):
+def plot_outages_ts_years(state, years, data_directory='../Data/eaglei_data'):
     """
     Plots the time series of total customers without power for a specific state over multiple years.
 
@@ -495,7 +495,7 @@ def make_ts_power(state,
                   end_year,
                   end_month,
                   end_day,
-                  data_directory = './data/eaglei_data'):
+                  data_directory = '../Data/eaglei_data'):
     """
     Generate a time series dataframe of power outages for a specific state within a given date range.
 
@@ -587,8 +587,8 @@ def combine_agg_ts(state,
                    end_year,
                    end_month,
                    end_day,
-                   data_directory_power = './data/eaglei_data',
-                   data_directory_events = './data/NOAA_StormEvents'):
+                   data_directory_power = '../Data/eaglei_data',
+                   data_directory_events = '../Data/NOAA_StormEvents'):
     """
     Combine and aggregate time series data of power outages and weather events for a specific state within a given date range.
 
