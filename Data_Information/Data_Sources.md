@@ -12,8 +12,12 @@
   - Electric retail service territories: https://atlas.eia.gov/datasets/geoplatform::electric-retail-service-territories-2/explore
   - Power plants: https://atlas.eia.gov/datasets/eia::power-plants/explore
 - **American Geosciences Institute**: I’ve read that they have maps/data about energy infrastructure, but I’m having trouble finding it online (https://profession.americangeosciences.org/research)
-- **Buried Power Lines**: Comprehensive data don’t appear to exist; local data may be available (e.g., https://webmaps.sandiego.gov/portal/apps/Cascade/index.html?appid=929e10afa0b64837a21e49e3df343149)
 - **US DoE City and County Energy Profiles**: Has county-level electricity consumption by sector https://catalog.data.gov/dataset/city-and-county-energy-profiles-60fbd
+
+### Energy/Infrastructure Data We Don’t Have...
+- **Power Grid by County**: North America is divided into six power grid regions (see https://www.epa.gov/green-power-markets/us-grid-regions). Seems like we’d want to know which region each county is in?
+- **Buried Power Lines**: Comprehensive data don’t appear to exist; local data may be available (e.g., https://webmaps.sandiego.gov/portal/apps/Cascade/index.html?appid=929e10afa0b64837a21e49e3df343149)
+
 
 ### Weather Data
 - **Datasets used in WeatherBench 2**: https://weatherbench2.readthedocs.io/en/latest/data-guide.html
