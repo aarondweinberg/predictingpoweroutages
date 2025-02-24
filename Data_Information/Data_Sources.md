@@ -16,6 +16,7 @@
 ### Energy/Infrastructure Data We Don’t Have...
 - **Power Grid by County**: North America is divided into six power grid regions (see https://www.epa.gov/green-power-markets/us-grid-regions). Seems like we’d want to know which region each county is in?
 - **Buried Power Lines**: Comprehensive data don’t appear to exist; local data may be available (e.g., https://webmaps.sandiego.gov/portal/apps/Cascade/index.html?appid=929e10afa0b64837a21e49e3df343149)
+- **Quality and Robustness of Energy Infrastructure**
 
 
 ### Weather Data
@@ -39,4 +40,3 @@
 ### Demographic Data
 - **NACo County Explorer**: The National Association of Counties has an interactive map generator with many variables; seems like the underlying data sets should be available? (https://explorer.naco.org/)
 - **NWS List of Counties**: A list of counties with corresponding FIPS codes, location, etc. (https://www.weather.gov/gis/Counties)
-
