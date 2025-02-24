@@ -5,7 +5,6 @@
 - **NOAA Storm Events**: https://www.ncdc.noaa.gov/stormevents/
 
 
-
 ## Additional Sources:
 ### Energy Data
 - **US Energy Information Administration US Energy Atlas**:
