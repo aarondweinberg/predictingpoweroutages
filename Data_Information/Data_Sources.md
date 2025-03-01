@@ -20,8 +20,13 @@
 
 
 ### Weather Data
+- **ERA5 Downloads**
+	- **Official documentation about how to download ERA5**: https://confluence.ecmwf.int/display/CKB/How+to+download+ERA5
+	- **Download from Google** https://console.cloud.google.com/marketplace/product/bigquery-public-data/arco-era5?inv=1&invt=Abq4wg&project=master-chess-349017
+    - **Download using the ecmwf package**: https://github.com/ecmwf/ecmwf-opendata
+    - **Download from ECMWF**: https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5
+    - **Copernicus Climate Data Store**: https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land?tab=overview
 - **Datasets used in WeatherBench 2**: https://weatherbench2.readthedocs.io/en/latest/data-guide.html
-- **Copernicus Climate Data Store**: https://cds.climate.copernicus.eu/
 - **NWS Climate Data**: Looks like you need to click through a map to access data for each forecast office, but maybe the data can be bulk-downloaded? (https://www.weather.gov/wrh/climate)
 
 ### Topography Data
