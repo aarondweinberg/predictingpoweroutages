@@ -14,7 +14,7 @@
 - **US DoE City and County Energy Profiles**: Has county-level electricity consumption by sector https://catalog.data.gov/dataset/city-and-county-energy-profiles-60fbd
 
 ### Energy/Infrastructure Data We Don’t Have...
-- **Power Grid by County**: North America is divided into six power grid regions (see https://www.epa.gov/green-power-markets/us-grid-regions). Seems like we’d want to know which region each county is in?
+- **Power Grid by County**: North America is divided into six power grid regions (see https://www.epa.gov/green-power-markets/us-grid-regions). The EPA has a geodatabase and simplified subregions data (https://www.epa.gov/egrid/maps)
 - **Buried Power Lines**: Comprehensive data don’t appear to exist; local data may be available (e.g., https://webmaps.sandiego.gov/portal/apps/Cascade/index.html?appid=929e10afa0b64837a21e49e3df343149)
 - **Quality and Robustness of Energy Infrastructure**
 
