@@ -10,18 +10,18 @@ request = {
         "snow_cover",
         "snow_depth",
         "snowfall",
-        "runoff",
         "10m_u_component_of_wind",
         "10m_v_component_of_wind",
         "total_precipitation",
         "leaf_area_index_high_vegetation",
         "leaf_area_index_low_vegetation",
         "high_vegetation_cover",
-        "lake_cover",
-        "low_vegetation_cover"
+        "low_vegetation_cover",
+        "type_of_high_vegetation",
+        "type_of_low_vegetation"
     ],
-    "year": "2014",
-    "month": "01",
+    "year": ["2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"]
+    "month": ["01","02","03","04","05","06","07","08","09","10","11","12"]
     "day": [
         "01", "02", "03",
         "04", "05", "06",
@@ -46,7 +46,7 @@ request = {
         "21:00", "22:00", "23:00"
     ],
     "data_format": "grib",
-    "download_format": "unarchived",
+    "download_format": "zip",
     "area": [49, -125, 24, -66]
 }
 
