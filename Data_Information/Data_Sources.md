@@ -15,7 +15,8 @@
 - **Electricity Power Grid GIS**: https://hub.arcgis.com/datasets/fedmaps::u-s-electric-power-transmission-lines/explore?location=43.006434%2C-87.946834%2C14.83
 
 ### Energy/Infrastructure Data We Don’t Have...
-- **Power Grid by County**: North America is divided into six power grid regions (see https://www.epa.gov/green-power-markets/us-grid-regions). Seems like we’d want to know which region each county is in?
+- **Electricity Power Transmission Lines**: This seems relevant, but I’m not sure how to access the underlying data: https://www.arcgis.com/home/item.html?id=d4090758322c4d32a4cd002ffaa0aa12
+- **Power Grid by County**: North America is divided into six power grid regions (see https://www.epa.gov/green-power-markets/us-grid-regions). The EPA has a geodatabase and simplified subregions data (https://www.epa.gov/egrid/maps)
 - **Buried Power Lines**: Comprehensive data don’t appear to exist; local data may be available (e.g., https://webmaps.sandiego.gov/portal/apps/Cascade/index.html?appid=929e10afa0b64837a21e49e3df343149)
 - **Quality and Robustness of Energy Infrastructure**
 
