@@ -17,7 +17,7 @@
 ### Energy/Infrastructure Data We Don’t Have...
 - **Electricity Power Transmission Lines**: This seems relevant, but I’m not sure how to access the underlying data: https://www.arcgis.com/home/item.html?id=d4090758322c4d32a4cd002ffaa0aa12
 - **Power Grid by County**: North America is divided into six power grid regions (see https://www.epa.gov/green-power-markets/us-grid-regions). The EPA has a geodatabase and simplified subregions data (https://www.epa.gov/egrid/maps)
-- **Buried Power Lines**: Comprehensive data don’t appear to exist; local data may be available (e.g., https://webmaps.sandiego.gov/portal/apps/Cascade/index.html?appid=929e10afa0b64837a21e49e3df343149)
+- **Buried Power Lines**: Comprehensive data exists! See the arXiv paper https://arxiv.org/abs/2402.06668. It looks like some of these data may be available from Stanford data commons: https://datacommons.stanford.edu/tools/download#pt=County&place=country%2FUSA&sv=distri_ug_rate&dtType=ALL&facets=%7B%7D
 - **Quality and Robustness of Energy Infrastructure**
 
 
