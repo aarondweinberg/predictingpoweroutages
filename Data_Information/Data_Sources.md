@@ -46,4 +46,5 @@
 
 ### Demographic Data
 - **NACo County Explorer**: The National Association of Counties has an interactive map generator with many variables; seems like the underlying data sets should be available? (https://explorer.naco.org/)
+- **US Census County Shapefile**: A shape file for US counties: https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html
 - **NWS List of Counties**: A list of counties with corresponding FIPS codes, location, etc. (https://www.weather.gov/gis/Counties)
