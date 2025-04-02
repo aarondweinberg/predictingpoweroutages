@@ -239,7 +239,7 @@ def combine_agg_ts_county(fips_code,
     
     return df_county_ts_comb_hr, df_county_ts_comb_day
 
-def make_data_chunks(days_per_chunk = 7, days_per_X = 5, days_per_y = 2, df_state_ts_comb_hr, start_year, end_year):
+def make_data_chunks(df_state_ts_comb_hr, start_year, end_year, outpath, filename, days_per_chunk = 7, days_per_X = 5, days_per_y = 2):
     """
     Chunk dataset into training samples of several days and save to pickle.
 
@@ -251,8 +251,10 @@ def make_data_chunks(days_per_chunk = 7, days_per_X = 5, days_per_y = 2, df_stat
     start_year (int): The starting year used to create the dataframe
     end_year (int): The starting year used to create the dataframe
     outpath (str): directory to save chunked data to
+    filename (str): name string to append to end of filename
     Returns:
-    None
+    X_chunked (array): 3D array of chunked X data
+    y_chunked (array): 2D array of chunked y data
     Raises:
     FileNotFoundError: if the output directory doesn't exist
     """
@@ -274,12 +276,12 @@ def make_data_chunks(days_per_chunk = 7, days_per_X = 5, days_per_y = 2, df_stat
     # save chunked data
     if not os.path.isdir(outpath):
         raise FileNotFoundError(outpath + ' does not exist.')
-    out_file = open(outpath + '/X_chunked_'+str(start_year)+'_'+str(end_year)+'.pkl', 'ab')
+    out_file = open(outpath + '/X_chunked_'+str(start_year)+'_'+str(end_year) +'_'+ filename + '.pkl', 'ab')
     pickle.dump(chunked_X, out_file)
     out_file.close()
-    out_file = open(outpath + '/y_chunked_'+str(start_year)+'_'+str(end_year)+'.pkl', 'ab')
+    out_file = open(outpath + '/y_chunked_'+str(start_year)+'_'+str(end_year)+'_'+ filename + '.pkl', 'ab')
     pickle.dump(chunked_y, out_file)
     out_file.close()
     
-    return
+    return chunked_X, chunked_y
        

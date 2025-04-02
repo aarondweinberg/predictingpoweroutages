@@ -16,3 +16,4 @@ Using the provided notebook to aggregate the weather events and power outages da
 **Model Exploration**:
 1) Attempted Varimax model (supposed to be good for multivariate timeseries) with little success.
 2) Currenlty working on Neural Network which should allow us to take into account temporal (and potentially spatial) correlations in the data.
+3) Linear regression with summary (rather than timeseries) predictors
