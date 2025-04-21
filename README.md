@@ -25,7 +25,7 @@ We aggregate all these datasets at the county level and construct timeseries rep
 **Modeling Task:**
 Our engineered and aggregated data lends itself to many tasks, but as a simple initial approach we aim to predict the maximum fraction of people without power at the county level tomorrow, based on weather data over the past 5 days. We take our test set to be the most recent two years of data (2022-2023). We split the remaining data into a training and validation set using cross validation by iteratively training on an interval of observations and validating on the next observation to avoid data leakage, though the details of this varied somewhat between modeling frameworks.
 
-**Modeling Approuches:**
+**Modeling Approaches:**
 We experimented with a variety of models, including a linear regression on a vector summary of each timeseries feature, a neural network, and various timeseries analyses. We ultimately decided to compare four models using the framework of the sktime package (a naive model, linear regression, gradient boosted regression, and XGboost) and an LSTM using TensorFlow. We used the mean RMSE across counties in the validation set as our metric for comparison. Despite exploration of different hyperparameters and feature engineering attempts, we were unable to find a model which performed much better than the naive model. Our models performed no better than guessing that the target tomorrow should be similar to today. While not inaccurate, this isn’t a particularly useful result. This suggests that our modeling framework or our representation of our features may not be appropriate for this modeling task. 
 
 **Directory Structure:**
